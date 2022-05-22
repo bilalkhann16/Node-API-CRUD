@@ -31,6 +31,7 @@ router.post('/',(req,res)=>{
 });
 
 router.get('/:id', (req,res) => {
+    console.log(req.params)
     res.send('the get id route.')
 });
  
