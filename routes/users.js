@@ -21,7 +21,9 @@ router.get('/',(req,res)=>{
 
 router.post('/',(req,res)=>{
     console.log("post request created");
-    res.send("post request created")
+    const user = req.body;
+    users.push(user);
+    res.send(`User with the name ${user.firstName} added to the database!`);
 });
  
 
